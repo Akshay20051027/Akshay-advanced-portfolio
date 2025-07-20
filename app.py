@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-import pywhatkit as pwk
-import pyautogui
+
 import time
 import smtplib
 from email.mime.text import MIMEText
