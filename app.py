@@ -36,9 +36,9 @@ def send_contact():
         "whatsapp": "Not selected",
         "email": "Not selected"
     }
-
+    results["whatsapp"] = "WhatsApp automation not supported in cloud."
     # Send WhatsApp message
-    if contact_methods.get('whatsapp', False) and phone:
+    '''if contact_methods.get('whatsapp', False) and phone:
         try:
             # Clean phone number
             phone_clean = ''.join(filter(str.isdigit, phone))
@@ -54,7 +54,7 @@ def send_contact():
             results["whatsapp"] = "Message sent successfully!"
         except Exception as e:
             print("WhatsApp error:", e)
-            results["whatsapp"] = f"Failed to send: {str(e)}"
+            results["whatsapp"] = f"Failed to send: {str(e)}"'''
 
     # Send Email message
     if contact_methods.get('email', False) and email:
