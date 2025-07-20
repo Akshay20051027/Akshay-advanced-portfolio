@@ -291,7 +291,7 @@
     statusMessage.className = "status-message";
 
     try {
-      const response = await fetch('http://localhost:5000/send_contact', {
+      const response = await fetch('/send_contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
