@@ -1,5 +1,2 @@
 Flask
 flask-cors
-pywhatkit
-pyautogui
-requests
